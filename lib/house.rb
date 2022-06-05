@@ -98,7 +98,10 @@ class House
  
 end
 
-class Pirate
+class Pirate < House
+    def initialize()
+        super("Thar be")
+    end
 
 end
 
