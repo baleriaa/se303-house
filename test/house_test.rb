@@ -264,14 +264,6 @@ class RandomPirateLyricsTest < Minitest::Test
     assert_includes expected, "Thar be"
   end
 
-
-
-  def test_random_pirate_line_9
-    expected = RandomPirateLyrics.new.generate_lyrics(9)
-    assert_includes expected, "Thar be"
-  end
-
-  
 end
 
 
