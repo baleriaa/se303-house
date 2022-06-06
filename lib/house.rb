@@ -106,7 +106,7 @@ class Pirate < House
 end
 
 class RandomPirateLyrics < RandomLyrics
-    def random_pirate_lyrics(number)
+    def generate_lyrics(number)
         random_pirate = Pirate.new.line(number)
     end
 end
