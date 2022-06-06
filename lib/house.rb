@@ -70,37 +70,37 @@ class House
  
 end
 
-# class RandomLyrics < House
-#     def noun(line)
-#         noun.shuffle!()
-#         line_num = line - 1
-#         if line_num == 0
-#             ""
-#         else
-#             @nouns[line_num]
-#         end
-#     end
+class RandomLyrics < House
+    def noun(line)
+        noun.shuffle!()
+        line_num = line - 1
+        if line_num == 0
+            ""
+        else
+            @nouns[line_num]
+        end
+    end
 
-#     def verb(line)
-#         verb.shuffle!()
-#         line_num = line - 1
-#         if line_num == 0
-#             ""
-#         else
-#             @verbs[line_num] 
-#         end
-#     end
+    def verb(line)
+        verb.shuffle!()
+        line_num = line - 1
+        if line_num == 0
+            ""
+        else
+            @verbs[line_num] 
+        end
+    end
 
-#     def line(number)
-#         super(number)
-#     end
-# end
+    def line(number)
+        super(number)
+    end
+end
 
-# class Pirate < House
-#     def initialize()
-#         super("Thar be")
-#     end
+class Pirate < House
+    def initialize
+        super("Thar be")
+    end
 
-# end
+end
 
 

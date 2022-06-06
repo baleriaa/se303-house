@@ -93,6 +93,9 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     TEXT
     assert_equal expected, House.new.recite
   end
+end
+
+class PirateTest < Minitest::Test
 
   def test_pirate_line_1
     expected = "Thar be the house that Jack built."
@@ -154,14 +157,19 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   end
 
   def test_pirate_all_lines
-    expected "Thar be the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+    expected = "Thar be the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, Pirate.new.recite
   end
 
-  def test_random_line_3
-    random = Random.new.line(3)
-    not_random = House.new.line(3)
-    assert_not_equal(random, not_random)
-  end
 end
+
+class RandomLyricsTest < Minitest::Test
+
+  def test_random_lyrics_line_2
+    expected = House.new.line(2)
+    assert_not_equal expected, RandomLyrics.new.line(2)
+  end
+
+end
+
 
