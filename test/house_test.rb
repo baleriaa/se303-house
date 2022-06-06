@@ -166,8 +166,9 @@ end
 class RandomLyricsTest < Minitest::Test
 
   def test_random_lyrics_line_2
-    expected = House.new.line(2)
-    assert_not_equal expected, RandomLyrics.new.line(2)
+    expected = RandomLyrics.new.line(2)
+    not_expected = House.new.line(2)
+    assert_not_equal expected, not_expected
   end
 
 end
