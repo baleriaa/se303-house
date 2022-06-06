@@ -173,4 +173,8 @@ class RandomLyricsTest < Minitest::Test
 
 end
 
+class RandomPirateLyricsTest < Minitest::Test
+
+end
+
 
