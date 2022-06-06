@@ -187,15 +187,13 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
 
 end
 
-class RandomLyricsTest < Minitest::Test
+class RandomLineTest < Minitest::Test
 
-  # def test_random_lyrics_line_2
-  #   expected = RandomLyrics.new.line(2)
-  #   not_expected = House.new.line(2)
-  #   assert_not_equal expected, not_expected
-  # end
-
-
+  def test_random_lyrics_line_2
+    expected = RandomLine.new.line(2)
+    not_expected = House.new.line(2)
+    refute_equal expected, not_expected
+  end
 
 end
 
@@ -215,19 +213,16 @@ class RandomPirateLyricsTest < Minitest::Test
 
   def test_random_pirate_line_3
     expected = RandomPirateLyrics.new.generate_lyrics(3)
-    # not_expected = House.new.line(2)
     assert_includes expected, "Thar be"
   end
 
   def test_random_pirate_line_4
     expected = RandomPirateLyrics.new.generate_lyrics(4)
-    # not_expected = House.new.line(2)
     assert_includes expected, "Thar be"
   end
 
   def test_random_pirate_line_5
     expected = RandomPirateLyrics.new.generate_lyrics(5)
-    # not_expected = House.new.line(2)
     assert_includes expected, "Thar be"
   end
 

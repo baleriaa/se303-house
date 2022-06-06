@@ -72,9 +72,9 @@ class House
     end
 end
 
-class RandomLyrics < House
+class RandomLine < House
     def noun(line)
-        noun.shuffle!()
+        @nouns.shuffle!()
         line_num = line - 1
         if line_num == 0
             ""
@@ -84,7 +84,7 @@ class RandomLyrics < House
     end
 
     def verb(line)
-        verb.shuffle!()
+        @verbs.shuffle!()
         line_num = line - 1
         if line_num == 0
             ""
@@ -105,7 +105,7 @@ class Pirate < House
 
 end
 
-class RandomPirateLyrics < RandomLyrics
+class RandomPirateLyrics < RandomLine
     def generate_lyrics(number)
         Pirate.new.line(number)
     end
