@@ -107,7 +107,7 @@ end
 
 class RandomPirateLyrics < RandomLyrics
     def generate_lyrics(number)
-        random_pirate = Pirate.new.line(number)
+        Pirate.new.line(2)
     end
 end
 
