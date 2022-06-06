@@ -218,6 +218,60 @@ class RandomPirateLyricsTest < Minitest::Test
     # not_expected = House.new.line(2)
     assert_includes expected, "Thar be"
   end
+
+  def test_random_pirate_line_4
+    expected = RandomPirateLyrics.new.generate_lyrics(4)
+    # not_expected = House.new.line(2)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_5
+    expected = RandomPirateLyrics.new.generate_lyrics(5)
+    # not_expected = House.new.line(2)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_6
+    expected = RandomPirateLyrics.new.generate_lyrics(6)
+    assert_includes expected, "Thar be"
+  end
+  def test_random_pirate_line_7
+    expected = RandomPirateLyrics.new.generate_lyrics(7)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_8
+    expected = RandomPirateLyrics.new.generate_lyrics(8)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_9
+    expected = RandomPirateLyrics.new.generate_lyrics(9)
+    assert_includes expected, "Thar be"
+  end
+  def test_random_pirate_line_10
+    expected = RandomPirateLyrics.new.generate_lyrics(10)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_11
+    expected = RandomPirateLyrics.new.generate_lyrics(11)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_12
+    expected = RandomPirateLyrics.new.generate_lyrics(12)
+    assert_includes expected, "Thar be"
+  end
+
+
+
+  def test_random_pirate_line_9
+    expected = RandomPirateLyrics.new.generate_lyrics(9)
+    assert_includes expected, "Thar be"
+  end
+
+  
 end
 
 
