@@ -3,7 +3,6 @@ class House
     def initialize(intro = "This is")
         @intro = intro
         @ending = "the house that Jack built."
-
         @nouns = [
             " the house",
             " the malt",
@@ -34,8 +33,12 @@ class House
         ]
     end
 
-    def line(number)
-        "#{@intro}#{noun_plus_verb(number)}#{@ending}\n"
+    def line(number, new_line = false)
+        if new_line
+            (1..12).map { |number| line(number)}.join("\n")
+        else
+            "#{@intro}#{noun_plus_verb(number)}#{@ending}\n"
+        end
     end
 
     def noun(line)
@@ -65,9 +68,8 @@ class House
     end
 
     def recite
-        line(12)
+        line(12, true)
     end
- 
 end
 
 class RandomLyrics < House
@@ -102,5 +104,6 @@ class Pirate < House
     end
 
 end
+
 
 
