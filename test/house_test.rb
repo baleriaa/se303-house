@@ -189,11 +189,73 @@ end
 
 class RandomLineTest < Minitest::Test
 
+
   def test_random_lyrics_line_2
     expected = RandomLine.new.line(2)
     not_expected = House.new.line(2)
     refute_equal expected, not_expected
   end
+
+  def test_random_lyrics_line_3
+    expected = RandomLine.new.line(3)
+    not_expected = House.new.line(3)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_4
+    expected = RandomLine.new.line(4)
+    not_expected = House.new.line(4)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_5
+    expected = RandomLine.new.line(5)
+    not_expected = House.new.line(5)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_6
+    expected = RandomLine.new.line(6)
+    not_expected = House.new.line(6)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_7
+    expected = RandomLine.new.line(7)
+    not_expected = House.new.line(7)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_8
+    expected = RandomLine.new.line(8)
+    not_expected = House.new.line(8)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_9
+    expected = RandomLine.new.line(9)
+    not_expected = House.new.line(9)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_10
+    expected = RandomLine.new.line(10)
+    not_expected = House.new.line(10)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_11
+    expected = RandomLine.new.line(11)
+    not_expected = House.new.line(11)
+    refute_equal expected, not_expected
+  end
+
+  def test_random_lyrics_line_12
+    expected = RandomLine.new.line(12)
+    not_expected = House.new.line(12)
+    refute_equal expected, not_expected
+  end
+
 
 end
 
