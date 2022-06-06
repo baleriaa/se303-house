@@ -20,7 +20,7 @@ class House
         ]
         @verbs = [
             "that Jack built.",
-            "that lay in ",
+            "that lay in",
             "that ate",
             "that killed",
             "that worried",
@@ -41,7 +41,7 @@ class House
     def noun(line)
         line_num = line - 1
         if line_num == 0
-            ""
+            @nouns[line_num]
         else
             @nouns[line_num]
         end
@@ -58,7 +58,7 @@ class House
 
     def noun_plus_verb(line)
         if line == 1
-            ""
+            " "
         else
             "#{noun(line)} #{verb(line)}#{noun_plus_verb(line - 1)}"
         end
