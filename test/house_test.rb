@@ -189,18 +189,32 @@ end
 
 class RandomLyricsTest < Minitest::Test
 
-  def test_random_lyrics_line_2
-    expected = RandomLyrics.new.line(2)
-    not_expected = House.new.line(2)
-    assert_not_equal expected, not_expected
-  end
+  # def test_random_lyrics_line_2
+  #   expected = RandomLyrics.new.line(2)
+  #   not_expected = House.new.line(2)
+  #   assert_not_equal expected, not_expected
+  # end
+
+
 
 end
 
 class RandomPirateLyricsTest < Minitest::Test
 
+  def test_random_pirate_line_1
+    expected = RandomPirateLyrics.new.generate_lyrics(1)
+    # not_expected = House.new.line(2)
+    assert_includes expected, "Thar be"
+  end
+
   def test_random_pirate_line_2
     expected = RandomPirateLyrics.new.generate_lyrics(2)
+    # not_expected = House.new.line(2)
+    assert_includes expected, "Thar be"
+  end
+
+  def test_random_pirate_line_3
+    expected = RandomPirateLyrics.new.generate_lyrics(3)
     # not_expected = House.new.line(2)
     assert_includes expected, "Thar be"
   end
